@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "company": "TINGLES",
+      "country": "Mauritania",
+      "state": "Maryland",
+      "city": "Konterra",
+      "address": "548 Rost Place"
+    },
+    {
+      "id": 2,
+      "company": "KEEG",
+      "country": "Croatia (Hrvatska)",
+      "state": "Ohio",
+      "city": "Clarksburg",
+      "address": "717 Christopher Avenue"
+    },
+    {
+      "id": 3,
+      "company": "GINKLE",
+      "country": "Puerto Rico",
+      "state": "Alabama",
+      "city": "Tibbie",
+      "address": "968 Corbin Place"
+    },
+    {
+      "id": 4,
+      "company": "ZILLATIDE",
+      "country": "Turkmenistan",
+      "state": "New Hampshire",
+      "city": "Ona",
+      "address": "873 Vandam Street"
+    },
+    {
+      "id": 5,
+      "company": "NETPLAX",
+      "country": "South Africa",
+      "state": "New Jersey",
+      "city": "Bend",
+      "address": "779 Porter Avenue"
+    },
+    {
+      "id": 6,
+      "company": "BITTOR",
+      "country": "Taiwan",
+      "state": "Nebraska",
+      "city": "Groveville",
+      "address": "440 Bliss Terrace"
+    },
+    {
+      "id": 7,
+      "company": "BOILICON",
+      "country": "Korea (North)",
+      "state": "Tennessee",
+      "city": "Nanafalia",
+      "address": "414 Prince Street"
+    },
+    {
+      "id": 8,
+      "company": "POSHOME",
+      "country": "Uzbekistan",
+      "state": "Palau",
+      "city": "Garberville",
+      "address": "393 Everit Street"
+    }
+  ]
+}

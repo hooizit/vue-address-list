@@ -1,18 +1,30 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AddressList :addressList="addressList" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import axios from "axios";
+import AddressList from "@/components/AddressList.vue";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
-    HelloWorld
+    AddressList
+  },
+  data() {
+    return {
+      addressList: []
+    };
+  },
+  async created() {
+    try {
+      const res = await axios.get(`http://localhost:3000/data`);
+      this.addressList = res.data;
+    } catch (e) {
+      console.error(e);
+    }
   }
-}
+};
 </script>
