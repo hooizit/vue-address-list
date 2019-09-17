@@ -1,12 +1,21 @@
 <template>
   <div class="home">
-    <AddressList :addressList="addressList" />
+    <header>
+      <section class="section">
+        <router-link
+          tag="a"
+          class="button is-primary is-rounded is-pulled-left"
+          to="/add-company"
+        >Add New</router-link>
+      </section>
+    </header>
+    <AddressList :companiesList="companiesList" />
   </div>
 </template>
 
 <script>
-import axios from "axios";
 import AddressList from "@/components/AddressList.vue";
+import apiService from "../api-service";
 
 export default {
   name: "home",
@@ -15,16 +24,12 @@ export default {
   },
   data() {
     return {
-      addressList: []
+      companiesList: []
     };
   },
   async created() {
-    try {
-      const res = await axios.get(`http://localhost:3000/data`);
-      this.addressList = res.data;
-    } catch (e) {
-      console.error(e);
-    }
+    const res = await apiService.getAllCompanies();
+    this.companiesList = res.data;
   }
 };
 </script>

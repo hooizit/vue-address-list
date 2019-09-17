@@ -1,68 +1,136 @@
 {
-  "data": [
+  "companies": [
     {
       "id": 1,
-      "company": "TINGLES",
-      "country": "Mauritania",
-      "state": "Maryland",
-      "city": "Konterra",
+      "name": "TINGLES",
+      "country": "Казахстан",
+      "state": "Алматинская",
+      "city": "Алматы",
       "address": "548 Rost Place"
     },
     {
       "id": 2,
-      "company": "KEEG",
-      "country": "Croatia (Hrvatska)",
-      "state": "Ohio",
-      "city": "Clarksburg",
+      "name": "KEEG",
+      "country": "Казахстан",
+      "state": "Алматинская",
+      "city": "Талдыкорган",
       "address": "717 Christopher Avenue"
     },
     {
       "id": 3,
-      "company": "GINKLE",
-      "country": "Puerto Rico",
-      "state": "Alabama",
-      "city": "Tibbie",
+      "name": "GINKLE",
+      "country": "Казахстан",
+      "state": "Мангистауская",
+      "city": "Атырау",
       "address": "968 Corbin Place"
     },
     {
       "id": 4,
-      "company": "ZILLATIDE",
-      "country": "Turkmenistan",
-      "state": "New Hampshire",
-      "city": "Ona",
+      "name": "ZILLATIDE",
+      "country": "Казахстан",
+      "state": "Мангистауская",
+      "city": "Актау",
       "address": "873 Vandam Street"
     },
     {
       "id": 5,
-      "company": "NETPLAX",
-      "country": "South Africa",
-      "state": "New Jersey",
-      "city": "Bend",
+      "name": "NETPLAX",
+      "country": "Россия",
+      "state": "Mосковсвкая",
+      "city": "Москва",
       "address": "779 Porter Avenue"
     },
     {
       "id": 6,
-      "company": "BITTOR",
-      "country": "Taiwan",
-      "state": "Nebraska",
-      "city": "Groveville",
+      "name": "BITTOR",
+      "country": "Россия",
+      "state": "Mосковсвкая",
+      "city": "Красногорск",
       "address": "440 Bliss Terrace"
     },
     {
       "id": 7,
-      "company": "BOILICON",
-      "country": "Korea (North)",
-      "state": "Tennessee",
-      "city": "Nanafalia",
+      "name": "BOILICON",
+      "country": "Россия",
+      "state": "Ленинградская",
+      "city": "Гатчина",
       "address": "414 Prince Street"
     },
     {
       "id": 8,
-      "company": "POSHOME",
-      "country": "Uzbekistan",
-      "state": "Palau",
-      "city": "Garberville",
+      "name": "POSHOME",
+      "country": "Россия",
+      "state": "Ленинградская",
+      "city": "Выборг",
       "address": "393 Everit Street"
+    },
+    {
+      "name": "111",
+      "country": "111",
+      "state": "111",
+      "city": "111",
+      "address": "111",
+      "id": 9
+    },
+    {
+      "name": "222",
+      "country": "222",
+      "state": "222",
+      "city": "222",
+      "address": "222",
+      "id": 10
+    },
+    {
+      "name": "123",
+      "country": "3425",
+      "state": "4536",
+      "city": "457",
+      "address": "63475",
+      "id": 11
+    },
+    {
+      "name": "dsf",
+      "country": "fdg",
+      "state": "gh",
+      "city": "sdfg",
+      "address": "adf",
+      "id": 12
     }
-  ]
+  ],
+  "locality": {
+    "country": {
+      "Казахстан": {
+        "state": {
+          "Алматинская": {
+            "city": [
+              "Алматы",
+              "Талдыкорган"
+            ]
+          },
+          "Мангистауская": {
+            "city": [
+              "Атырау",
+              "Актау"
+            ]
+          }
+        }
+      },
+      "Россия": {
+        "state": {
+          "Mосковсвкая": {
+            "city": [
+              "Москва",
+              "Красногорск"
+            ]
+          },
+          "Ленинградская": {
+            "city": [
+              "Выборг",
+              "Гатчина"
+            ]
+          }
+        }
+      }
+    }
+  }
 }
