@@ -63,38 +63,6 @@
       "state": "Ленинградская",
       "city": "Выборг",
       "address": "393 Everit Street"
-    },
-    {
-      "name": "111",
-      "country": "111",
-      "state": "111",
-      "city": "111",
-      "address": "111",
-      "id": 9
-    },
-    {
-      "name": "222",
-      "country": "222",
-      "state": "222",
-      "city": "222",
-      "address": "222",
-      "id": 10
-    },
-    {
-      "name": "123",
-      "country": "3425",
-      "state": "4536",
-      "city": "457",
-      "address": "63475",
-      "id": 11
-    },
-    {
-      "name": "dsf",
-      "country": "fdg",
-      "state": "gh",
-      "city": "sdfg",
-      "address": "adf",
-      "id": 12
     }
   ],
   "locality": {

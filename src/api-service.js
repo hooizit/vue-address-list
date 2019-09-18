@@ -30,6 +30,10 @@ export default {
     });
   },
 
+  deleteCompany(id) {
+    return axios.delete(`${apiBase}/companies/${id}/`);
+  },
+
   getLocality() {
     return axios.get(`${apiBase}/locality`);
   }

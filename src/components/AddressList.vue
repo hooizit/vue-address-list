@@ -20,9 +20,11 @@
                 <i class="fas fa-edit"></i>
               </span>
             </router-link>
-            <span class="icon has-text-danger">
-              <i class="fas fa-trash"></i>
-            </span>
+            <a @click="onDelete(item.id)">
+              <span class="icon has-text-danger">
+                <i class="fas fa-trash"></i>
+              </span>
+            </a>
           </td>
         </tr>
       </tbody>
@@ -32,6 +34,6 @@
 
 <script>
 export default {
-  props: ["companiesList"]
+  props: ["companiesList", "onDelete"]
 };
 </script>

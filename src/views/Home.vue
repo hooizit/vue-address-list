@@ -9,7 +9,7 @@
         >Add New</router-link>
       </section>
     </header>
-    <AddressList :companiesList="companiesList" />
+    <AddressList :companiesList="companiesList" :onDelete="deleteCompany" />
   </div>
 </template>
 
@@ -30,6 +30,12 @@ export default {
   async created() {
     const res = await apiService.getAllCompanies();
     this.companiesList = res.data;
+  },
+  methods: {
+    deleteCompany(id) {
+      apiService.deleteCompany(id);
+      this.$router.go(); // ------------------
+    }
   }
 };
 </script>
