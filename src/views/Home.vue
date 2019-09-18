@@ -34,7 +34,7 @@ export default {
   methods: {
     deleteCompany(id) {
       apiService.deleteCompany(id);
-      this.$router.go(); // ------------------
+      this.companiesList = this.companiesList.filter(el => el.id !== id);
     }
   }
 };
