@@ -19,6 +19,15 @@ export default {
       address: data.address
     });
   },
+  async createCompany(data) {
+    return await axios.post(`${apiBase}/companies`, {
+      name: data.name,
+      country: data.selectedCountry,
+      state: data.selectedState,
+      city: data.selectedCity,
+      address: data.address
+    });
+  },
 
   updateCompany(id, data) {
     return axios.put(`${apiBase}/companies/${id}`, {

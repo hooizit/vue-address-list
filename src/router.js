@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import AddCompany from "./views/AddCompany.vue";
 import EditCompany from "./views/EditCompany.vue";
+import CreateCompany from "./views/CreateCompany.vue";
 
 Vue.use(Router);
 
@@ -22,6 +23,11 @@ export default new Router({
       path: "/edit-company/:id",
       name: "editCompany",
       component: EditCompany
+    },
+    {
+      path: "/create-company",
+      name: "createCompany",
+      component: CreateCompany
     }
   ]
 });

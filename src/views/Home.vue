@@ -5,7 +5,7 @@
         <router-link
           tag="a"
           class="button is-primary is-rounded is-pulled-left"
-          to="/add-company"
+          to="/create-company"
         >Add New</router-link>
       </section>
     </header>
