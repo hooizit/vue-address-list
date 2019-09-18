@@ -15,15 +15,13 @@ yarn run serve
 yarn run build
 ```
 
-### Run your tests
+### Нужно установить json-server
 ```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
+npm install -g json-server
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### И запустить
+```
+json-server --watch db.json
+```
+
