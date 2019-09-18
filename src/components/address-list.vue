@@ -15,7 +15,7 @@
           <td>{{item.name}}</td>
           <td>{{item.country}}, {{item.state}}, {{item.city}}, {{item.address}}</td>
           <td>
-            <router-link tag="a" :to="'/company/' + item.id">
+            <router-link tag="a" :to="'/edit-company/' + item.id">
               <span class="icon has-text-info">
                 <i class="fas fa-edit"></i>
               </span>

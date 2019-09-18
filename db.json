@@ -1,12 +1,12 @@
 {
   "companies": [
     {
-      "id": 1,
       "name": "TINGLES",
       "country": "Казахстан",
       "state": "Алматинская",
       "city": "Алматы",
-      "address": "548 Rost Place"
+      "address": "548 Rost Place",
+      "id": 1
     },
     {
       "id": 2,
@@ -49,12 +49,12 @@
       "address": "440 Bliss Terrace"
     },
     {
-      "id": 7,
       "name": "BOILICON",
       "country": "Россия",
       "state": "Ленинградская",
       "city": "Гатчина",
-      "address": "414 Prince Street"
+      "address": "414 Prince Street11",
+      "id": 7
     },
     {
       "id": 8,

@@ -10,7 +10,7 @@
       </header>
     </section>
     <section class="section">
-      <form @submit.prevent="addCompany">
+      <form @submit.prevent="editCompany">
         <div class="field is-horizontal">
           <div class="field-label is-normal">
             <label class="label">Компания</label>
@@ -18,7 +18,7 @@
           <div class="field-body">
             <div class="field">
               <div class="control">
-                <input class="input" type="text" v-model="newCompany.companyName" />
+                <input class="input" type="text" v-model="company.name" />
               </div>
             </div>
           </div>
@@ -31,7 +31,7 @@
           <div class="field-body">
             <div class="field">
               <div class="control">
-                <input class="input" type="text" v-model="newCompany.country" />
+                <input class="input" type="text" v-model="company.country" />
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@
           <div class="field-body">
             <div class="field">
               <div class="control">
-                <input class="input" type="text" v-model="newCompany.state" />
+                <input class="input" type="text" v-model="company.state" />
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@
           <div class="field-body">
             <div class="field">
               <div class="control">
-                <input class="input" type="text" v-model="newCompany.city" />
+                <input class="input" type="text" v-model="company.city" />
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@
           <div class="field-body">
             <div class="field">
               <div class="control">
-                <input class="input" type="text" v-model="newCompany.address" />
+                <input class="input" type="text" v-model="company.address" />
               </div>
             </div>
           </div>
@@ -96,27 +96,23 @@
 
 <script>
 import apiService from "../api-service";
+
 export default {
+  name: "editCompany",
   data() {
     return {
-      newCompany: {
-        companyName: null,
-        country: null,
-        state: null,
-        city: null,
-        address: null
-      }
+      id: this.$router.currentRoute.params["id"],
+      company: {},
+      saved: false
     };
   },
+  async created() {
+    const res = await apiService.getCompany(this.id);
+    this.company = res.data;
+  },
   methods: {
-    addCompany: function(e) {
-      apiService.addCompany(this.newCompany);
-      this.newCompany.companyName = null;
-      this.newCompany.country = null;
-      this.newCompany.state = null;
-      this.newCompany.city = null;
-      this.newCompany.address = null;
-      e.preventDefault();
+    editCompany() {
+      apiService.updateCompany(this.id, this.company);
     }
   }
 };

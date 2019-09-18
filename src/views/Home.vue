@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import AddressList from "@/components/AddressList.vue";
+import AddressList from "@/components/address-list.vue";
 import apiService from "../api-service";
 
 export default {
